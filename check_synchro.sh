@@ -49,7 +49,6 @@ get_map_api_last_check() {
         MAP_TOKEN=$(cat /tmp/.map_token)
         result=$(curl -w "\n%{http_code}\n"  -s "${map_url}/${map_host_check_path}/${host_id}" -H "${map_curl_auth_header} ${MAP_TOKEN}" "${map_curl_headers[@]}" --insecure)
         http_code=$(echo "$result" | tail -1)
-        #[ ${http_code} -ne 200 ] && refresh_token || from_map_api_last_check=$(echo "$result" | grep lastStateCheck | head -1 | grep -E -o "[0-9]+")
         [ ${http_code} -ne 200 ] && refresh_token || from_map_api_last_check=$(echo "$result" | grep -Po 'lastStateCheck":\K[0-9]+|lastStateCheck" : \K[0-9]+' | head -1)
         from_map_api_last_check=${from_map_api_last_check:0:10}
 }
