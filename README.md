@@ -4,6 +4,7 @@ This bash script allows you to check if broker output to MAP server is updating 
 ## Prerequisites ##
 - MAP extensions NG or Legacy.
 - have at least one map view with a host monitored.
+- netstat and nc commands installed.
 
 ## How to use it ##
 ````
