@@ -40,3 +40,8 @@ And also test the port via nc.
 - Check with netstat and nc in case of diff superior to 0 second.
 - Will automatically search for one host that is configured in a map view, for the last_check timestamp comparaison.
 - Use /etc/centreon-map/ or /etc/centreon-studio configuration folder for database/api credentials.
+
+
+## Not yet functionning ## 
+
+See [issues](https://github.com/alexvea/check_synchro_central_map/issues)
