@@ -23,6 +23,8 @@ MAP_LAST_CHECK timestamp is retrived via curl to MAP API.
 
 The diff value is in second.
 
+The refresh value can be 0 or 1. 1 meaning that the token was not correct and has been refreshed.
+
 2)NOK case : 
 ````
 [24-05-28_15:41:01] NG CENTRAL_LAST_CHECK: 1716910835 / MAP_LAST_CHECK: 1716910775 / diff: 60 / refresh: 0 / status: NOK /
