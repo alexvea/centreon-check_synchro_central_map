@@ -1,4 +1,3 @@
-[root@avea-map-2310-el9 ~]# cat check_synchro.sh 
 #!/usr/bin/env bash
 REFRESHED=0
 
